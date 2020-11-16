@@ -2,7 +2,7 @@ var popped = 0;
 
 document.addEventListener('mouseover', function(e){
     
-    if (e.target.className == "balloon"){
+    if (e.target.className == "balloon" &&  e.target.textContent != "POP!"){
         
                 e.target.style.backgroundColor = "#ededed";
                 e.target.textContent = "POP!";
